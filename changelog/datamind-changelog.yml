@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.unistream.cloud/release-notes.md
+scheme: calver              # YYYY.MM release notes (docs); Unihub has separate vYY.MM.DD builds
+current: '2026.06'
+docs: https://docs.unistream.cloud/release-notes
+entries:
+  - version: '2026.06'
+    date: '2026-07-15'
+    breaking: false
+    highlights:
+      - Full application redesign and refreshed Observability.
+      - AI Mind evolves into a full AI agent with task scheduling and enhanced chat.
+      - New SQL Editor with multi-tab support, autosave, and version history.
+      - Claude Desktop integration via MCP tool connection, plus 2FA support.
+  - version: '2026.04'
+    date: '2026-07-08'
+    breaking: false
+    highlights:
+      - AI Mind gains vectorization (vector storage/retrieval) and RAG search.
+      - Task Scheduler for scheduled recurring conversations/tasks with history.
+      - Email-driven auth flows (registration confirmation, password reset, magic links).
+      - Data Lake batch operations and database compatibility fixes.
+  - version: '2026.03'
+    date: '2026-07-08'
+    breaking: false
+    highlights:
+      - New Observability module (system overview + query management history/filters).
+      - Query Editor enhancements with improved layout and intelligent aggregations.
+      - Data Lake and workflow upgrades — custom connectors, dependency tracking, auto-recovery.
