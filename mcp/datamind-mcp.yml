@@ -2,31 +2,33 @@ generated: '2026-07-18'
 method: searched
 source: https://docs.unistream.cloud/ (release-notes 2026.06 + docs MCP guidance)
 status: published
-notes: >-
-  Unistream (DataMind) ships an MCP server as part of the platform, surfaced to
-  end users via a Claude Desktop connector (added in release 2026.06, published
-  2026-07-15). It is primarily intended for on-prem / self-hosted deployments,
-  so there is no single public hosted MCP URL — the server runs inside each
-  Unistream deployment. Transport and exact tool names are not published in the
-  docs; the capabilities below are the documented high-level surface. Do not
-  treat the tool list as authoritative operationIds — it is the documented
-  capability description, not a published tool manifest.
+notes: Unistream (DataMind) ships an MCP server as part of the platform, surfaced to end users via a Claude
+  Desktop connector (added in release 2026.06, published 2026-07-15). It is primarily intended for on-prem
+  / self-hosted deployments, so there is no single public hosted MCP URL — the server runs inside each
+  Unistream deployment. Transport and exact tool names are not published in the docs; the capabilities
+  below are the documented high-level surface. Do not treat the tool list as authoritative operationIds
+  — it is the documented capability description, not a published tool manifest.
 server:
   name: unistream
-  transport: unknown        # not documented (self-hosted; Claude Desktop connector)
-  port: 4000                # documented default MCP port for on-prem deployments
-  hosted_url: null          # no public hosted endpoint; runs inside each deployment
+  transport: unknown
+  port: 4000
+  hosted_url: null
   auth: browser-based sign-in (per-user local install) or admin-imported workspace connector
 install:
   claude_desktop:
     workspace: Admins download the Unistream connector file and import it as a custom Claude Desktop connector.
     local: Users add Unistream in Claude Desktop settings, install, then authenticate via browser.
 capabilities:
-  - name: query_tables
-    description: Query tables with read-only, safe operations.
-  - name: explore_schemas
-    description: Explore and inspect data schemas.
-  - name: interact_with_minds
-    description: Interact with Unistream "Minds" (agentic AI data agents).
-  - name: inline_results
-    description: Deliver inline query results within Claude Desktop.
+- name: query_tables
+  description: Query tables with read-only, safe operations.
+- name: explore_schemas
+  description: Explore and inspect data schemas.
+- name: interact_with_minds
+  description: Interact with Unistream "Minds" (agentic AI data agents).
+- name: inline_results
+  description: Deliver inline query results within Claude Desktop.
+deployment:
+  mode: unclear
+  verified: searched
+  checked: '2026-08-12'
+  source: catalog MCP census
