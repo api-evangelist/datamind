@@ -46,6 +46,9 @@ specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 image: https://unistream.cloud/lovable-uploads/d61db35a-0411-48a6-9768-2d4a28f0e56c.png
+x-docs-platform: gitbook
+x-docs-platform-confidence: high
+x-docs-platform-checked: 2026-09-25
 tags:
 - Company
 - Data
