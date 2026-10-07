@@ -1,0 +1,60 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://datamind.ge/pricing
+sources:
+- https://datamind.ge/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed+licensed
+  method: page
+  read: '2026-10-07'
+  evidence: On-Premise Deployment option
+  managed_tier: Essentials
+published: true
+note: Monthly/Yearly toggle with '2 Months Free' on yearly; monthly prices shown. Enterprise offers Cloud
+  or On-Premise deployment under custom pricing.
+plan_count: 4
+currency: USD
+plans:
+- name: Essentials
+  price_text: $899/month
+  price: 899
+  currency: USD
+  period: month
+  included_quota: 8 vCPU, 32GB RAM; 1TB Premium SSD, 128K IOPS; Data Lake only; 50 Pre-built connectors;
+    1 AI Mind; Up to 5 Users; 100 SQL Query Generations/month; 50 AI Report Generations/month; Up to 5
+    ERD Diagrams; Daily Backups; 14-Day Free Trial
+- name: Plus
+  price_text: $3,999/month
+  price: 3999
+  currency: USD
+  period: month
+  included_quota: 16 vCPU, 64GB RAM; 3TB Premium SSD, 256K IOPS; Data Lake & Warehouse; 60 connectors;
+    10 AI Minds; Up to 25 Users; 750 SQL Query Generations/month; 350 AI Report Generations/month; Up
+    to 10 ERD Diagrams; Daily Backups; 30-Day Free Trial
+- name: Premium
+  price_text: $5,499/month
+  price: 5499
+  currency: USD
+  period: month
+  included_quota: 32 vCPU, 128GB RAM; 15TB Premium SSD, 512K IOPS; Lake, Warehouse & Marts; 100+ connectors;
+    Unlimited AI Minds; Unlimited Users; 5,000 SQL Query Generations/month; 2,500 AI Report Generations/month;
+    Unlimited ERD Diagrams; Hourly Backups; 60-Day Free Trial
+- name: Enterprise
+  price_text: Custom Pricing
+  period: none
+  included_quota: Everything in Premium; On-Premise Deployment option; Custom Infrastructure; SSO; Jira/Clickup;
+    Custom LLM Integration; Dedicated Success Manager; 24/7 Premium Support
+rate_limit_statements:
+- 100 SQL Query Generations/month
+- 50 AI Report Generations/month
+- 750 SQL Query Generations/month
+- 350 AI Report Generations/month
+- 5,000 SQL Query Generations/month
+- 2,500 AI Report Generations/month
